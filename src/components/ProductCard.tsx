@@ -5,7 +5,6 @@ import * as Icons from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 interface ProductCardProps {
-  // Accept either the name of an icon (serializable string) or a LucideIcon component
   icon?: string | LucideIcon;
   title: string;
   description: string;
@@ -20,7 +19,7 @@ export default function ProductCard({
   features, 
   delay = 0 
 }: ProductCardProps) {
-  // Resolve icon: if a string was passed, pick the matching icon from lucide-react
+
   const iconRegistry = Icons as unknown as Record<string, LucideIcon>;
   const ResolvedIcon = typeof icon === "string" ? iconRegistry[icon] ?? iconRegistry.Shield : icon;
   return (

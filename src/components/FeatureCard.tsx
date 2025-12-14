@@ -5,7 +5,7 @@ import * as Icons from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 interface FeatureCardProps {
-  // Accept either the name of an icon (serializable string) or a LucideIcon component
+
   icon?: string | LucideIcon;
   title: string;
   description: string;
