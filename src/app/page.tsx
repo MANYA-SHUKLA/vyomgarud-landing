@@ -1,6 +1,4 @@
-// Icon names are passed as plain strings to avoid passing non-serializable React components from
-// this Server Component to Client Components. Actual icon components will be resolved inside
-// the client components (ProductCard / FeatureCard).
+
 import AnimatedSection from '@/components/AnimatedSection';
 import FeatureCard from '@/components/FeatureCard';
 import ProductCard from '@/components/ProductCard';
@@ -60,8 +58,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      
-      {/* About Section */}
+    
       <section className="py-20 px-4 max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-12">
@@ -133,7 +130,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      {/* Highlights Section */}
+
       <section className="py-20 px-4 max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-16">
@@ -159,7 +156,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      {/* Contact Section */}
+
       <section className="py-20 px-4 max-w-4xl mx-auto">
         <AnimatedSection>
           <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-2xl border border-gray-700 p-8 md:p-12">
@@ -238,7 +235,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      {/* Footer */}
+
       <footer className="py-12 px-4 border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -264,6 +261,7 @@ export default function Home() {
             <p className="text-gray-600 text-sm">
               For authorized government and defense personnel only. Export controlled technology.
             </p>
+            <p className="text-gray-500 text-sm mt-2">Made by Manya Shukla</p>
           </div>
         </div>
       </footer>
