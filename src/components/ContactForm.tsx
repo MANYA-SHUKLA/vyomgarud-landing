@@ -105,7 +105,7 @@ export default function ContactForm() {
         </button>
       </form>
 
-      {/* Success toast */}
+
       <div
         aria-live="polite"
         className={`fixed top-6 right-6 z-50 transform transition-all duration-300 ${
