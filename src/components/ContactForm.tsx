@@ -19,8 +19,6 @@ export default function ContactForm() {
     e.preventDefault();
     const form = formRef.current;
     if (!form) return;
-
-    // Use built-in validity checking to show browser messages for invalid fields
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
