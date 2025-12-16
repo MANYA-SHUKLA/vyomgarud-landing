@@ -25,8 +25,6 @@ export default function ContactForm() {
     }
 
     setSubmitting(true);
-
-    // Simulate async submission
     await new Promise((r) => setTimeout(r, 600));
 
     setSubmitting(false);
@@ -102,8 +100,6 @@ export default function ContactForm() {
           {submitting ? "Sending..." : "Request Technical Briefing"}
         </button>
       </form>
-
-
       <div
         aria-live="polite"
         className={`fixed top-6 right-6 z-50 transform transition-all duration-300 ${
